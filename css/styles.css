@@ -165,7 +165,6 @@ address {
     margin-left: auto;
     margin-right: auto;
     
-    
     text-align: center;
     
     background-color: var(--base-color);
@@ -173,8 +172,6 @@ address {
         url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-position:center;
-    
-
 }
 
 .title-hero {
@@ -231,7 +228,9 @@ address {
 }
 
 .features-icon-container {
-    padding: 25px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
@@ -318,8 +317,6 @@ address {
     display: flex;
     justify-content: center;
     gap: 10px;
-
-
 }
 
 .socials-link {
@@ -331,8 +328,6 @@ address {
     border-radius: 50%;
     fill: var(--icon-main-color);
 }
-
-
 
 .socials-link:hover,
 .socials-link:focus {
@@ -355,8 +350,7 @@ address {
     height: 92px;
     border: 1px solid var(--icon-main-color);
     border-radius: 4px;
-    fill: var(--icon-main-color);
-    
+    fill: var(--icon-main-color);    
 }
 
 .clients-link:hover,
@@ -465,17 +459,24 @@ address {
 .portfolio-items {
     flex-basis: calc((100% - 60px) / 3);
     background-color: var(--primary-white-color);
-    border: 1px solid #EEEEEE;
+    
     cursor: pointer;
 }
 
-.portfolio-items:hover,
-.portfolio-items:focus {
+.portfolio-link {
+    display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-items>div {
+.portfolio-box {
     padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 
